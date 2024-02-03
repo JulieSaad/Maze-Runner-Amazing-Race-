@@ -48,18 +48,21 @@ void loop() {
 void goForward(double delayTime, double leftPower, double rightPower) {
   motors.setSpeeds(leftPower, rightPower);
   delay(delayTime*1000.0);
+  stopRobot(0)
 }
 
 //method to make the robot turn left/counterclockwise (delayTime is in seconds)
 void turnRobotLeft(double delayTime, double leftPower, double rightPower) {
   motors.setSpeeds(leftPower, rightPower);
   delay(delayTime*1000.0);
+  stopRobot(0)
 }
 
 //method to make the robot turn right/clockwise (delayTime is in seconds)
 void turnRobotRight(double delayTime, double leftPower, double rightPower) {
   motors.setSpeeds(leftPower, rightPower);
   delay(delayTime*1000.0);
+  stopRobot(0)
 }
 
 //method to make the robot stop (delayTime is in seconds)
